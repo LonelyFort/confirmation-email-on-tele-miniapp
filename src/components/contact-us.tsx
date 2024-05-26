@@ -21,6 +21,11 @@ const ContactUs: React.FC = () => {
     return re.test(email);
   };
 
+  const isNUSEmail = (email: string) => {
+    const domain = email.split('@')[1];
+    return domain === 'u.nus.edu';
+  }
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -32,15 +37,19 @@ const ContactUs: React.FC = () => {
 
     try {
       setIsSubmitting(true);
-      const errors = { name: '', email: '', message: '' };
+      const errors = {email: ''};
 
       if (formState.email === '' || !validateEmail(formState.email)) {
         errors.email = 'Valid email is required';
       }
 
+      if (!isNUSEmail(formState.email)) {
+        errors.email = 'Email must be from NUS e.g example@u.nus.edu';
+      }
+
       setErrors(errors);
 
-      if (!errors.name && !errors.email && !errors.message) {
+      if (!errors.email) {
          await fetch('/api/email', {
           method: 'POST',
           headers: {
