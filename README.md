@@ -1,36 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a mini side project I created to learn Telegram Mini App API, Vercel, basic HTML, React TypeScript, Email API Resend and PipeDream.
 
-## Getting Started
+##Objective
 
-First, run the development server:
+This project intends to send users (exclusively from National University of Singapore) a "Hi!" message after they enter their NUS email address in the white box, so as to mimic sending users confirmation email.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+##Functionality
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Telegram Bot: https://t.me/nusemailbot 
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+When pressing start on Telegram, a message will appear saying "Please enter your NUS Email Address by opening the web app at the bottom left of the screen.". After which, users will be directed to press the button on the bottom left of the screen which opens up a
+MiniApp that shows an white blank box for users to input their email address.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Since we are only sending email address to users from NUS, users must enter their NUS email or an error sign says " Email must be from NUS e.g example@u.nus.edu " will appear.
 
-## Learn More
+After inputting, they will receive an email from (sender) with a message "Hi!".
 
-To learn more about Next.js, take a look at the following resources:
+Disclaimer: As this is a mini side project, I used the test domain as the sender for the email. Please use a proper domain if you want to deploy to production.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
