@@ -1,10 +1,10 @@
 This is a mini side project I created to learn Telegram Mini App API, Vercel, basic HTML, React TypeScript, Email API Resend and PipeDream.
 
-##Objective
+##Objective##
 
 This project intends to send users (exclusively from National University of Singapore) a "Hi!" message after they enter their NUS email address in the white box, so as to mimic sending users confirmation email.
 
-##Functionality
+##Functionality##
 
 Telegram Bot: https://t.me/nusemailbot 
 
