@@ -1,4 +1,4 @@
-This is a mini side project I created to learn Telegram Mini App API, Vercel, basic HTML, React TypeScript, Email API Resend and PipeDream.
+This is a mini side project I created to learn Telegram Mini App API, Vercel, basic HTML, React TypeScript, Email API, Resend and Python.
 
 ## Objective
 
@@ -16,4 +16,6 @@ Since we are only sending email address to users from NUS, users must enter thei
 After inputting, they will receive an email from (sender) with a message "Hi!".
 
 Disclaimer: As this is a mini side project, I used the test domain as the sender for the email. Please use a proper domain if you want to deploy to production.
+Disclaimer 2: Since the bot reply logic is written in python, the script has to be ran continuously which is done by either a private server or a cloud server. Since this is a mini-project I 
+will not be using either. If you want demonstration of the bot please leave a message.
 
