@@ -13,7 +13,7 @@ MiniApp that shows an white blank box for users to input their email address.
 
 Since we are only sending email address to users from NUS, users must enter their NUS email or an error sign says " Email must be from NUS e.g example@u.nus.edu " will appear.
 
-After inputting, they will receive an email from (sender) with a message "Hi!".
+After inputting, they will receive an email from (sender) with a message "You are now verified as NUS student.".
 
 Disclaimer: As this is a mini side project, I used the test domain as the sender for the email. Please use a proper domain if you want to deploy to production.
 Disclaimer 2: Since the bot reply logic is written in python, the script has to be ran continuously which is done by either a private server or a cloud server. Since this is a mini-project I 
