@@ -11,7 +11,7 @@ export async function POST(req: Request) {
       from: 'delivered@resend.dev',
       to: payload.email,
       subject: `Hello`,
-      react: ContactUsEmail(payload),
+      react: ContactUsEmail(),
     });
 
     if (error) {
