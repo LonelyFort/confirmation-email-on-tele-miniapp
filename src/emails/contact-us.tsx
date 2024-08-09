@@ -11,7 +11,6 @@ import {
   export const ContactUsEmail = () => (
     <Html>
       <Head />
-      <Preview>Thank you for your confirmation.</Preview>
       <Body style={main}>
         <Container style={container}>
           <Text style={paragraph}>You are now verified as NUS student.</Text>

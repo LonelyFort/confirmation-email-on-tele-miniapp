@@ -10,7 +10,7 @@ export async function POST(req: Request) {
     const { data, error } = await resend.emails.send({
       from: 'delivered@resend.dev',
       to: payload.email,
-      subject: `Hello`,
+      subject: `Thank you for your confirmation`,
       react: ContactUsEmail(),
     });
 
